@@ -69,16 +69,20 @@ console.log('Total supplies available are:', totalSupplies);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
-let boxes = 0
+//create some global scope variables for my while loop
+let boxes = 0;
+let partsLeftover;
 let total = 572; 
-let j = 0;
-while (j < 572) {
-    j += 7;
+let j = 7;
+// start while loop
+while (total > 6) {
     total -= 7; 
     boxes++;
     if (total < 7 && total > 0) {
-        let leftover = total; 
-        console.log('Total boxes filled:', boxes);
-        console.log('Parts leftover:', leftover);
+        partsLeftover = total; 
     }
-}
+} // end while loop
+//log number of boxes and parts leftover
+console.log('Total boxes filled:', boxes); //should be 81
+console.log('Parts leftover:', partsLeftover); //should be 5
+

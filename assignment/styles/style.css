@@ -1,4 +1,14 @@
 /* give your assignment a fun background color */
 body {
-    background-color: cornflowerblue;
+    background-image: url("chesterCreek.jpg") ;
+}
+
+header {
+    background-color: #2a3517;
+    color: whitesmoke;
+}
+
+main {
+    background-color: #2a3517;
+    color: whitesmoke;
 }
